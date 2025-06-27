@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Gallery Café</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <section class="contact-section">
+        <div class="container">
+            <h2>Get in Touch</h2>
+            <p>Have a question or want to give us feedback? Feel free to contact us using the form below or visit us in person. We are always happy to hear from you!</p>
+            <form id="contactForm" action="send_message.php" method="post">
+                <div class="form-group">
+                    <label for="id">Message Id:</label>
+                    <input type="text" id="id" name="id" required>
+                </div>
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+                </div>
+                <button type="submit">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <section class="customer-reviews">
+        <div class="container">
+            <h2>What Our Customers Say</h2>
+            <div class="reviews-container">
+                <div class="review">
+                    <div class="reviewer">
+                        <img src="Images/people1.jpeg" alt="Customer 1">
+                        <h3>Raymond De Silva</h3>
+                    </div>
+                    <p class="review-text">"The food was amazing! I loved the ambiance and the friendly staff.
+                        I will definitely be coming back for more."</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer">
+                        <img src="Images/people2.jpeg" alt="Customer 2">
+                        <h3>Taniya Perera</h3>
+                    </div>
+                    <p class="review-text">"Great place to dine with friends and family. Highly recommend the pasta!"</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer">
+                        <img src="Images/people3.jpg" alt="Customer 3">
+                        <h3>Michael Anthony</h3>
+                    </div>
+                    <p class="review-text">""The pancakes were fluffy and delicious, with just the right amount of sweetness.
+                        The maple syrup was high-quality, and the fresh berries added a perfect touch. A wonderful breakfast treat!"</p>
+                </div>
+                <div class="review">
+                    <div class="reviewer">
+                        <img src="Images/people4.jpeg" alt="Customer 4">
+                        <h3>Shenaya Fernando</h3>
+                    </div>
+                    <p class="review-text">"The sushi platter was fresh and beautifully presented! The flavors were rich and perfectly balanced.
+                         I will definitely be coming back for more.""</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
